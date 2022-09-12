@@ -8,34 +8,34 @@ import Language.Haskell.TH.Lift
 
 deriveLift ''Scheme
 
-deriveLift ''Authority
-
-deriveLift ''Hierarchy
-
-deriveLift ''UserInfo
-
 deriveLift ''User
 
 deriveLift ''Password
 
-deriveLift ''Host
-
-deriveLift ''RegName
+deriveLift ''UserInfo
 
 deriveLift ''DomainLabel
 
+deriveLift ''RegName
+
+deriveLift ''Host
+
 deriveLift ''Port
+
+deriveLift ''Authority
+
+deriveLift ''PathSegment
 
 deriveLift ''Path
 
-deriveLift ''PathSegment
+deriveLift ''Hierarchy
 
 deriveLift ''Query
 
 deriveLift ''Fragment
 
-deriveLift ''HttpIri
-
 deriveLift ''Security
+
+deriveLift ''HttpIri
 
 deriveLift ''Iri
