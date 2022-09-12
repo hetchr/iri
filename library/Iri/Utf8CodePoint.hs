@@ -9,8 +9,7 @@ import Iri.Prelude
 {-|
 Church encoding of a UTF8-encoded character.
 -}
-type Utf8CodePoint =
-  forall a.
+type Utf8CodePoint a =
   (Word8 -> a) ->
   (Word8 -> Word8 -> a) ->
   (Word8 -> Word8 -> Word8 -> a) ->
@@ -18,12 +17,12 @@ type Utf8CodePoint =
   a
 
 {-# INLINE char #-}
-char :: Char -> Utf8CodePoint
+char :: Char -> Utf8CodePoint a
 char =
   unicodeCodePoint . ord
 
 {-# INLINE unicodeCodePoint #-}
-unicodeCodePoint :: Int -> Utf8CodePoint
+unicodeCodePoint :: Int -> Utf8CodePoint a
 unicodeCodePoint x f1 f2 f3 f4 =
   if x <= 0x7F
     then
