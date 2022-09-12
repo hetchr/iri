@@ -8,9 +8,9 @@ import Language.Haskell.TH.Lift
 
 deriveLift ''Scheme
 
-deriveLift ''Hierarchy
-
 deriveLift ''Authority
+
+deriveLift ''Hierarchy
 
 deriveLift ''UserInfo
 
