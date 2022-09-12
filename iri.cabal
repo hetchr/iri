@@ -65,7 +65,7 @@ library
     bytestring >=0.10 && <0.11,
     contravariant >=1.4 && <2,
     hashable >=1.2 && <2,
-    ip >=1.1 && <2,
+    ip >=1.5 && <2,
     profunctors >=5.2 && <6,
     ptr >=0.16.1 && <0.17,
     punycode >=2 && <3,
@@ -78,7 +78,8 @@ library
     unordered-containers >=0.2 && <0.3,
     vector >=0.10 && <0.13,
     vector-builder >=0.3.4 && <0.4,
-    vector-instances >=3.4 && <4
+    vector-instances >=3.4 && <4,
+    wide-word >=0.1.1.2 && <0.2
 
 test-suite test
   type: exitcode-stdio-1.0

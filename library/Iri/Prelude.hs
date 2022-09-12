@@ -118,8 +118,15 @@ import Data.HashMap.Strict as Exports (HashMap)
 -------------------------
 import Instances.TH.Lift as Exports
 
+-- wide-word
+-------------------------
+import Data.WideWord.Word128(Word128(..))
+
 --------------------------------------------------------------------------------
 
 import qualified Language.Haskell.TH.Lift as A
+
+A.deriveLift ''Word128
+
 A.deriveLift ''IPv4
 A.deriveLift ''IPv6
