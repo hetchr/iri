@@ -3,6 +3,7 @@ where
 
 import Iri.Prelude
 import Iri.Data.Types
+import Iri.Data.Instances.Eq
 import Iri.Data.Instances.Generic
 import qualified Net.IPv6 as B
 
