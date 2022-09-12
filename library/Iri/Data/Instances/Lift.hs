@@ -6,8 +6,6 @@ import Iri.Data.Types
 import Language.Haskell.TH.Lift
 
 
-deriveLift ''Iri
-
 deriveLift ''Scheme
 
 deriveLift ''Hierarchy
@@ -39,3 +37,5 @@ deriveLift ''Fragment
 deriveLift ''HttpIri
 
 deriveLift ''Security
+
+deriveLift ''Iri
